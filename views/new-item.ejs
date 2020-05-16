@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <h1>Biscoff Baked Goods</h1>
+        <h4>What's new?</h4>
+        <form action="/bakedgoods/create" method="post">
+            <label for="name">What's cooking?</label>
+            <input type="text" name="name" id="name">
+            <label for="price">What's the damage?</label>
+            <input type="number" name="price" id="price">
+            <label for="image">Link to Image</label>
+            <input type="url" name="image" id="image">
+            <input type="submit" value="Show the World!">
+        </form>
+    </div>
+</body>
+</html>

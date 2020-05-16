@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <h1>Biscoff Baked Goods</h1>
+    <% bakedGoods.forEach((yum, index) => { %>
+        <h4><%= yum.name %></h4><p>$<%= yum.price %></p>
+        <img src="<%= yum.image %>" alt="<%= yum.name %>">
+        <div class="btn waves-effect waves-light orange">
+            <a href="/bakedgoods/<%= yum.name %>">Get one before it's gone!</a>
+        </div>
+        
+    <% }) %>
+</body>
+</html>

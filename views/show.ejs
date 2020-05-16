@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <h1>Biscoff Baked Goods</h1>
+        <h4><%= yum.name %></h4><p>$<%= yum.price %></p>
+        <img src="<%= yum.image %>" alt="<%= yum.name %>">
+    <div class="btn waves-light waves-effect amber darken-3">
+        <a href="/bakedgoods">See More</a>
+    </div>
+</body>
+</html>
